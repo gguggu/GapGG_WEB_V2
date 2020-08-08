@@ -1,0 +1,53 @@
+$FONT_URL: '../../assets/fonts/Metropolis';
+
+@mixin font_face($name, $url) {
+  font-family: $name;
+  font-display: block;  // 웹 폰트 로딩처리
+  src:url($url + '.otf') format('opentype'),
+}
+
+$FONT_BLACK: 'MetroPolis Black';
+$FONT_EXTRA_BOLD: 'MetroPolis Extra Bold';
+$FONT_BOLD: 'MetroPolis Bold';
+$FONT_SEMI_BOLD: 'MetroPolis Semi Bold';
+$FONT_MEDIUM: 'MetroPolis Medium';
+$FONT_REGULAR: 'MetroPolis Regular';
+$FONT_LIGHT: 'MetroPolis Light';
+$FONT_THIN: 'MetroPolis Thin';
+$FONT_EXTRA_LIGHT: 'MetroPolis Extra Light';
+
+@font-face { 
+  @include font_face($FONT_BLACK, $FONT_URL + '-Black');
+}
+
+@font-face { 
+  @include font_face($FONT_EXTRA_BOLD, $FONT_URL + '-ExtraBold');
+}
+
+@font-face { 
+  @include font_face($FONT_BOLD, $FONT_URL + '-Bold');
+}
+
+@font-face { 
+  @include font_face($FONT_SEMI_BOLD, $FONT_URL + '-SemiBold');
+}
+
+@font-face { 
+  @include font_face($FONT_MEDIUM, $FONT_URL + '-Medium');
+}
+
+@font-face { 
+  @include font_face($FONT_REGULAR, $FONT_URL + '-Regular');
+}
+
+@font-face { 
+  @include font_face($FONT_LIGHT, $FONT_URL + '-Light');
+}
+
+@font-face { 
+  @include font_face($FONT_THIN, $FONT_URL + '-Thin');
+}
+
+@font-face { 
+  @include font_face($FONT_EXTRA_LIGHT, $FONT_URL + '-ExtraLight');
+}
