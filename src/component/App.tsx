@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import * as Pages from 'pages';
 
-const App = () => {
+const App = () : JSX.Element => {
   return (
     <Switch>
       <Route
@@ -10,23 +10,23 @@ const App = () => {
         path='/'
         render={() => <Pages.HomePage/>}
       />
-       <Route
+      <Route
         exact
         path='/compare/:summoner'
         render={() => <Pages.ComparePage/>}
       />
-       <Route
+      <Route
         exact
         path='/search/:summoner'
         render={() => <Pages.SearchPage/>}
       />
-       <Route
+      <Route
         path='/notfound'
         render={() => <Pages.NotFoundPage/>}
       />
       <Redirect to='/notfound'/>
     </Switch>
   );
-}
+};
 
 export default App;
