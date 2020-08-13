@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
+import './PageTemplate.scss';
 
 interface Props {
   type: string;
