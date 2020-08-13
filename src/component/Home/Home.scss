@@ -1,0 +1,41 @@
+@import 'styles/colors/ColorStyle.scss';
+@import 'styles/font/FontStyle.scss';
+
+.Home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &-logoWrap{
+    width: 100%;
+    height: 100px;
+    display: inherit;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    &>img{
+      width: 300px;
+      margin: auto;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+  }
+  &-inputWrap{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  &-contentBox{
+    width: 1000px;
+    height: 400px;
+    min-height: 400px;
+    background-color: $transMain;
+    margin: auto;
+    border-radius: 3px;
+    padding: 10px;
+    &-title{
+      font-size: 18px;
+      font-weight: 600;
+      color: $White;
+    }
+  }
+}
